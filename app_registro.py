@@ -116,16 +116,16 @@ if not st.session_state.registrado:
             placeholder="Ejemplos:\n1. LUIS GOMEZ (Invitado)\n2. CARLOS RUIZ (Invitado)"
         )
 
-        # TABLA DE PRECIOS DETALLADA
+       # TABLA DE PRECIOS DETALLADA Y CORREGIDA
         with st.expander("💰 CONSULTAR TABLA DE PRECIOS"):
             st.markdown("""
             | Concepto | Precio Socio | Precio Invitado |
             | :--- | :--- | :--- |
-            | **Boleto General** | $400.00 | $500.00 |
-            | **Disco (Sin Reservado)** | $250.00 | $300.00 |
-            | **Disco (Con Reservado)** | $350.00 | $400.00 |
+            | **Boleto Evento** | $400.00 | $500.00 |
+            | **Boleto Disco (Sin Reservado)** | $250.00 | $300.00 |
+            | **Boleto Disco (Con Reservado)** | $350.00 | $400.00 |
             """)
-            st.caption("Los precios y disponibilidad se confirman en ventanilla.")
+            st.info("💡 Nota: Los precios son por persona. La selección final se realiza en el club.")
 
         st.info("📌 Al finalizar, se generará un número de turno que deberá presentar en el Casino.")
         
@@ -181,3 +181,4 @@ else:
 
 # Footer
 st.markdown("<br><p style='text-align: center; font-size: 10px; color: gray;'>© 2026 Casino Tampico - Control de Acceso</p>", unsafe_allow_html=True)
+
